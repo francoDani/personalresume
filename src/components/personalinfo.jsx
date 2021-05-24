@@ -1,7 +1,7 @@
 const personalInfo = (props) => {
     return (
         <div>
-            <div className="personal">
+            <div className={"personal " + props.view}>
                 <h1>About Me</h1>
                 <h4>30 años</h4>
                 <span>|</span>

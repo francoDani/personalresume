@@ -10,7 +10,7 @@ import {
 
 const navigationVar = (props) => {
     return (
-            <div className="navigationvar">
+            <div className={"navigationvar "+ props.view}>
                 <ul>
                     <Link to="/"><li><button><FontAwesomeIcon icon={faUser} /></button></li></Link>
                     <Link to="/contactinfo"><li><button><FontAwesomeIcon icon={faPhone} /></button></li></Link>

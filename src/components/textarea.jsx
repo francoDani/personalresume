@@ -14,16 +14,16 @@ import Message from './message';
 const textArea = (props) => {
     return (
 
-        <div className="textarea">
+        <div className={"textarea " + props.view}>
             <Switch>
                 <Route path="/sendMessage">
-                    <Message />
+                    <Message view={ props.view }/>
                 </Route>
                 <Route path="/contactinfo">
-                    <ContactInfo />
+                    <ContactInfo view={ props.view }/>
                 </Route>
                 <Route path="/">
-                    <PersonalInfo />
+                    <PersonalInfo view={ props.view }/>
                 </Route>
             </Switch>
         </div>

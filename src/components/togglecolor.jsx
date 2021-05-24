@@ -3,8 +3,8 @@ import { faEnvelope, faPhone, faSun, faUser } from '@fortawesome/free-solid-svg-
 
 const toggleColor = (props) =>{
     return(
-        <div className="togglecolor">
-            <button><FontAwesomeIcon icon={faSun}/></button>
+        <div className={"togglecolor " + props.view}>
+            <button onClick={ props.changeview }><FontAwesomeIcon icon={faSun}/></button>
         </div>
     )
 }

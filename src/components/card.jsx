@@ -12,11 +12,11 @@ import {
 const card = (props) =>{
     return(
         <Router>
-        <div className="card">
-            <ToggleColor />
-            <NavigationVar />      
-            <ImgCard />
-            <TextArea />
+        <div className={ "card " + props.view}>
+            <ToggleColor view= { props.view } changeview = { props.changeview }/>
+            <NavigationVar view= { props.view }/>      
+            <ImgCard view= { props.view }/>
+            <TextArea view= { props.view }/>
         </div>
         </Router>
     )
