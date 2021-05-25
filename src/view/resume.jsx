@@ -8,16 +8,9 @@ class resume extends React.Component {
             view: "dark",
 
         }
-
-        
-
-        const changePage = (event) => {
-
-        }
-
     }
-     changeView = () => {
-        if (this.state.view == "light") {
+    changeView = () => {
+        if (this.state.view === "light") {
             this.setState({ view: "dark" })
         } else { this.setState({ view: "light" }) }
         console.log(this.state.view)
@@ -26,7 +19,7 @@ class resume extends React.Component {
         return (
             <div className="resume">
                 <Card view={this.state.view}
-                    changeview={ this.changeView } />
+                    changeview={this.changeView} />
             </div>
         )
     }

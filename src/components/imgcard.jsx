@@ -4,7 +4,7 @@ import SocialBtn from "./socialbtn"
 
 const imgCard = (props) =>{
     return(
-        <div className="profilephoto">
+        <div className={"profilephoto " + props.view}>
             <Sign />
             <SocialBtn />
         </div>
