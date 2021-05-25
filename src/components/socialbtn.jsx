@@ -5,9 +5,10 @@ const socialBtn = (props) =>{
     return(
         <div>
             <ul className="socialnet">
-                <li><FontAwesomeIcon icon={faLinkedinIn} /></li>
-                <li><FontAwesomeIcon icon={faInstagram} /></li>
-                <li><FontAwesomeIcon icon={faGithub} /></li>
+                <li> <a href="https://linkedin.com/in/francodanielsen"><FontAwesomeIcon icon={faLinkedinIn} /></a> </li>
+                <li><a href="https://instagram.com/francodanielsen"><FontAwesomeIcon icon={faInstagram} /></a></li>
+                <li><a href="https://github.com/francoDani"><FontAwesomeIcon icon={faGithub} /></a></li>
+                
             </ul>
         </div>
     )

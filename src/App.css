@@ -177,17 +177,19 @@
     bottom: 15px;
 }
 
-.profilephoto ul li
+.profilephoto ul li a
 {
+    text-decoration: none;
     color: #FFFFF2;
     font-size: 25px;
     margin: 10px;
     display: inline-block;
     cursor: pointer;
     transition: .2s;
+    
 }
 
-.profilephoto ul li:hover
+.profilephoto ul li a:hover
 {
     color: #00c483;
     transform: scale(1.2);
@@ -209,20 +211,20 @@
     overflow-x: hidden;
     transition: .5s;
     width: 55%;
-    z-index: 0;
+    z-index: 0;    
 }
 @media screen and (max-width: 1000px) {
     .textarea {
        width: 350px;       
     }
  }
-::-webkit-scrollbar {
+.textarea::-webkit-scrollbar {
     width: 1px;    
   }
     
   /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: #00c483;
+  .textarea::-webkit-scrollbar-thumb {
+    background: #00c483;    
   }
 
 .textarea li span
@@ -325,6 +327,8 @@
 .message input
 {
     display: block;    
+    border: none;
+    padding: 2px;
 }
 
 .message #name, #email
@@ -429,7 +433,7 @@
     color: #EFDC05;    
 }
 
-.profilephoto.dark ul li:hover
+.profilephoto.dark ul li a:hover
 {
     color: #EFDC05;
 }
@@ -438,3 +442,7 @@
 {
  color: #EFDC05;   
 }
+
+.textarea.dark::-webkit-scrollbar-thumb {
+    background: #EFDC05;
+  }
